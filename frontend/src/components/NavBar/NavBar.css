@@ -1,0 +1,31 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+.container{
+    align-items: center;
+}
+.logo{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.category a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+.tool{
+    background-color: #24283d;
+}
+
+.category :hover{
+   color: #787A91;
+    
+}
+
+.login{
+    cursor: pointer;
+}

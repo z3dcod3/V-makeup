@@ -1,0 +1,60 @@
+.slider__text{
+    z-index: 10;
+    margin: 100px;
+}
+
+.banner__text{
+    margin: 100px;
+    padding-top: 10%;
+}
+
+.banner__text > h1 ,h2{
+    font-size:xx-large;
+}
+
+.banner__text > button{
+    margin: 40px;
+    margin-left: 100px;
+    
+    
+}
+
+.banner__text > button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.banner__text > button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.bouncy{
+    background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.raise {
+    --color: #ffa260;
+    --hover: #e5ff60;
+  }
+
+  .raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
