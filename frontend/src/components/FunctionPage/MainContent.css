@@ -1,0 +1,35 @@
+.leftpane {
+  position: fixed;
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+  .demo_image{
+    width: 140%;
+    height: 100%;
+    padding-top: 10%;
+    position: relative;
+    padding-left: 10%;
+  }
+
+  .middlepane {
+    width: 50%;
+    height: 100%;
+    float:right;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.rightpane{
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+    float: right;
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0;
+}
+  
+  

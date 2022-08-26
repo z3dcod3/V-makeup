@@ -10,7 +10,6 @@ import logo from './img.jpg';
 import './NavBar.css';
 import { Link } from '@mui/material';
 
-
 const Search = styled( 'div' )( ( { theme } ) => ( {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -55,7 +54,7 @@ export default function PrimarySearchAppBar () {
 
     return (
         <Box className="container" sx={ { flexGrow: 1 } }>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar className="tool">
                     <img src={ logo } alt="logo" className='logo' />
 
@@ -72,8 +71,8 @@ export default function PrimarySearchAppBar () {
                         />
                     </Search>
                     <Box sx={ { flexGrow: 1 } } />
-                    <Typography style={ { margin: "20px" } } className="login" >Login</Typography>
-                    <Typography className="login" >SignUp</Typography>
+                    <Typography style={ { margin: "20px" } } className="category" ><Link to='/'>Login</Link></Typography>
+                    <Typography className="category" ><Link to='/'>SignUp</Link></Typography>
                 </Toolbar>
             </AppBar>
         </Box >

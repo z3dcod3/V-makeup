@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './UploadPage.css'
-// import Box from '@mui/material/Box';
+import { Link } from '@mui/material';
 
 const UploadPage = () => {
 
@@ -32,7 +32,7 @@ const UploadPage = () => {
                         <button className="file-upload">
                             <input type="file" className="file-input" onChange={ onChangePicture } />Choose File
                         </button>
-                        <button className="file-upload">Try Now</button>
+                        <button className="file-upload"><Link to='/main' Link>Try Now</Link></button>
                     </div>
                 </div>
             </div>

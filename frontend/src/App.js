@@ -1,15 +1,20 @@
-import NavBar from './components/NavBar/NavaBar';
-import Carousal from './components/Carousal/Carousal';
-import UploadPage from './components/Upload/UploadPage';
 import './App.css';
+import LandingPage from './components/LandingPage/LandingPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import MainContent from './components/FunctionPage/MainContent';
+
 
 
 function App () {
   return (
     <div className="App">
-      <NavBar />
-      <Carousal />
-      <UploadPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <LandingPage /> } />
+          <Route path="/main" element={ <MainContent /> } />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

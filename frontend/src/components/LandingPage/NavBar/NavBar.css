@@ -5,6 +5,7 @@
 }
 .container{
     align-items: center;
+    margin-bottom: 65px;
 }
 .logo{
     width: 30px;
@@ -17,15 +18,12 @@
     text-decoration: none;
 
 }
+.category :hover{
+    color: #787A91;
+     
+}
 .tool{
     background-color: #24283d;
 }
 
-.category :hover{
-   color: #787A91;
-    
-}
 
-.login{
-    cursor: pointer;
-}
