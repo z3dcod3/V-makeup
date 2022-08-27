@@ -12,7 +12,8 @@ const MainContent = () => {
             <div className="container">
                 <div className="leftpane">
                     <img className="demo_image" src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt='tiger' />
-                    <Button variant="outlined" color="success" style={ { marginTop: "20px", marginLeft:"150px" } }>Upload new Photo</Button>
+                    <Button variant="outlined" color="success" style={ { marginTop: "20px", marginLeft:"150px" } }>
+                    <input type="file" />Upload new Photo</Button>
                 </div>
                 <div className="rightpane">
                     <Sidebar />

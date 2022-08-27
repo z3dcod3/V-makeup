@@ -8,6 +8,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Button } from '@mui/material';
 
 const Sidebar = () => {
+    const Brand = [ "Urban Decay", "MakeUp Forever", "Nars", "Tarte", "Clinique", "Estee Lauder" ]
+    const Color = [ "Red", "Pink", "Brown", "Maroon", "Orange", "Coral", "Purple", "Black" ]
+    const Category = [ "Skin care products", "Hair care products", "Color Cosmetics", "Fragrances" ]
     return (
         <div>
             <div class="s-layout">
@@ -24,10 +27,9 @@ const Sidebar = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
 
-                                    <Button>Skin care products</Button>
-                                    <Button>Hair care products</Button>
-                                    <Button>Color Cosmetics</Button>
-                                    <Button>Fragrances</Button>
+                                    { Category.map( ( item ) => {
+                                        return <Button>{ item }</Button>
+                                    } ) }
 
                                 </AccordionDetails>
                             </Accordion>
@@ -41,12 +43,9 @@ const Sidebar = () => {
                                     <Typography>Brand</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Button>Urban Decay</Button>
-                                    <Button>Makeup Forever</Button>
-                                    <Button>Nars</Button>
-                                    <Button>Tarte</Button>
-                                    <Button>Clinique</Button>
-                                    <Button>Estee Lauder</Button>
+                                    { Brand.map( ( item ) => {
+                                        return ( <><Button>{ item }</Button> <br /></> )
+                                    } ) }
                                 </AccordionDetails>
                             </Accordion>
 
@@ -56,18 +55,25 @@ const Sidebar = () => {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography>Brand</Typography>
+                                    <Typography>Color</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <input type="color" />
+
+                                    { Color.map( ( item ) => {
+                                        return (
+                                            <>
+                                                <div className='circle' style={{backgroundColor: `${item}`}} >
+                                                <Button className='btn'>{ item }</Button> <br />
+                                                </div>
+                                                
+                                            </> )
+                                    } ) }
+
                                 </AccordionDetails>
                             </Accordion>
                         </ul>
                     </nav>
                 </div>
-                <main class="s-layout__content">
-                    <h1>Full View, Please!</h1>
-                </main>
             </div>
         </div >
     )

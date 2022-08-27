@@ -32,7 +32,7 @@ const UploadPage = () => {
                         <button className="file-upload">
                             <input type="file" className="file-input" onChange={ onChangePicture } />Choose File
                         </button>
-                        <button className="file-upload"><Link to='/main' Link>Try Now</Link></button>
+                        <button className="file-upload"><Link to="/main">Try Now</Link></button>
                     </div>
                 </div>
             </div>

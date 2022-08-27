@@ -39,7 +39,6 @@
     transition: all .3s ease-in;
     width: 15em;
     height: 100%;
-    background: #243e56;
     color: rgba(0,0 ,0,0 );
  }
  .s-sidebar__nav:hover,
@@ -93,6 +92,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+ }
+
+ .circle {
+   display: flex;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+ }
+ .circle > .btn{
+   margin-left: 50px;
  }
 
  /* Mobile First */
