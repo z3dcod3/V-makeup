@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './UploadPage.css'
-import { Link } from '@mui/material';
+import {Link} from 'react-router-dom';
 
 const UploadPage = () => {
 
